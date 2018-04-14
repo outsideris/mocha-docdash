@@ -296,7 +296,7 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
         items.forEach(function(item) {
             var methods = find({kind:'function', memberof: item.longname});
             var members = find({kind:'member', memberof: item.longname});
-            var docdash = env && env.conf && env.conf.docdash || {};
+            var mochaDocdash = env && env.conf && env.conf.mochaDocdash || {};
 
             if ( !hasOwnProp.call(item, 'longname') ) {
                 itemsNav += '<li>' + linktoFn('', item.name);
@@ -304,7 +304,7 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
             } else if ( !hasOwnProp.call(itemsSeen, item.longname) ) {
                 itemsNav += '<li>' + linktoFn(item.longname, item.name.replace(/^module:/, ''));
 
-                if (docdash.static && members.find(function (m) { return m.scope === 'static'; } )) {
+                if (mochaDocdash.static && members.find(function (m) { return m.scope === 'static'; } )) {
                     itemsNav += "<ul class='members'>";
 
                     members.forEach(function (member) {
@@ -408,7 +408,7 @@ function buildNav(members) {
     @param {Tutorial} tutorials
  */
 exports.publish = function(taffyData, opts, tutorials) {
-    var docdash = env && env.conf && env.conf.docdash || {};
+    var mochaDocdash = env && env.conf && env.conf.mochaDocdash || {};
     data = taffyData;
 
     var conf = env.conf.templates || {};
@@ -436,7 +436,7 @@ exports.publish = function(taffyData, opts, tutorials) {
 
     data = helper.prune(data);
 
-    docdash.sort !== false && data.sort('longname, version, since');
+    mochaDocdash.sort !== false && data.sort('longname, version, since');
     helper.addEventListeners(data);
 
     var sourceFiles = {};

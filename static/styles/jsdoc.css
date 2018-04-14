@@ -14,7 +14,7 @@ body {
   background-color: white;
   margin: 0 auto;
   padding: 0 20px;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 160%;
 }
@@ -25,7 +25,7 @@ img {
 
 a,
 a:active {
-  color: #606;
+  color: #663100;
   text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ p, ul, ol, blockquote {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -84,7 +84,7 @@ h4 {
 
 h4.name {
   color: #fff;
-  background: #6d426d;
+  background: #8d6648;
   box-shadow: 0 .25em .5em #d3d3d3;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
@@ -165,6 +165,7 @@ nav {
   overflow: auto;
   position: fixed;
   height: 100%;
+  padding: 10px 0 30px 0;
 }
 
 nav h3 {
@@ -199,7 +200,7 @@ nav ul a:active {
 
 nav a:hover,
 nav a:active {
-  color: #606;
+  color: #663100;
 }
 
 nav > ul {
@@ -207,7 +208,7 @@ nav > ul {
 }
 
 nav > ul > li > a {
-  color: #606;
+  color: #663100;
 }
 
 nav ul ul {
@@ -235,9 +236,12 @@ nav h2 {
 }
 
 nav > h2 > a {
-   display: block;
-   margin: 10px 0 -10px;
-   color: #606 !important;
+  background: url('../images/mocha-logo.svg') center center no-repeat;
+  text-indent: -999px;
+  display: block;
+  padding-top: 80%;
+  line-height: 0;
+  margin-top: 10px;
 }
 
 footer {
@@ -271,7 +275,7 @@ footer {
 }
 
 .type-signature {
-  color: #CA79CA
+  color: #dca92e
 }
 
 .type-signature:last-child {
@@ -283,7 +287,7 @@ footer {
 }
 
 .signature {
-    color: #fc83ff;
+    color: #e8c89e;
 }
 
 .details {
@@ -453,7 +457,7 @@ footer {
 }
 
 span.param-type, .params td .param-type, .param-type dd {
-   color: #606;
+   color: #663100;
   font-family: Consolas, Monaco, 'Andale Mono', monospace
 }
 

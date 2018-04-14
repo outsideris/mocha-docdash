@@ -11,8 +11,8 @@
     "plugins": ["plugins/markdown"],
     "opts": {
         "encoding": "utf8",
-        "template": "../",
-        "destination": "../fixtures-doc/",
+        "template": "./",
+        "destination": "fixtures-doc",
         "recurse": true,
         "verbose": true
     },
@@ -28,7 +28,7 @@
             "includeDate": false
         }
     },
-    "docdash": {
+    "mocha-docdash": {
         "static": false,
         "sort": true
     }
