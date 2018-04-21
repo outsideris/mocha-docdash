@@ -52,7 +52,7 @@ See the config file for the [fixtures](fixtures/fixtures.conf.json) or the sampl
         "plugins/markdown"
     ],
     "opts": {
-        "template": "assets/template/mocha-docdash/",
+        "template": "node_modules/@mocha/docdash",
         "encoding": "utf8",
         "destination": "docs/",
         "recurse": true,
