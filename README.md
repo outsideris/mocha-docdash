@@ -1,14 +1,14 @@
-# Mocha-docdash
-[![npm package](https://img.shields.io/npm/v/mocha-docdash.svg)](https://www.npmjs.com/package/mocha-docdash)
-[![license](https://img.shields.io/npm/l/mocha-docdash.svg)](LICENSE.md)
+# @mocha/docdash
+[![npm package](https://img.shields.io/npm/v/@mocha/docdash.svg)](https://www.npmjs.com/package/@mocha/docdash)
+[![license](https://img.shields.io/npm/l/@mocha/docdash.svg)](LICENSE.md)
 
-A jsdoc template for mochajs, forked from [docdash](http://clenemt.github.io/docdash/)
+A jsdoc template for [Mocha](https://mochajs.org), forked from [docdash](http://clenemt.github.io/docdash/)
 
 
 ## Install
 
 ```bash
-$ npm install mocha-docdash
+$ npm install @mocha/docdash
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ In your `jsdoc.json` file, add a template option.
 
 ```json
 "opts": {
-  "template": "node_modules/mocha-docdash"
+  "template": "node_modules/@mocha/docdash"
 }
 ```
 

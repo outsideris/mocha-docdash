@@ -1,5 +1,5 @@
 {
-  "name": "mocha-docdash",
+  "name": "@mocha/docdash",
   "version": "1.0.0",
   "description": "A jsdoc template for mochajs, forked from docdash",
   "main": "publish.js",
@@ -22,5 +22,8 @@
   "keywords": [
     "jsdoc",
     "template"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
