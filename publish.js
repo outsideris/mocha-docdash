@@ -319,7 +319,7 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
             var displayName;
             var methods = find({ kind: 'function', memberof: item.longname });
             var members = find({ kind: 'member', memberof: item.longname });
-            var docdash = env && env.conf && env.conf.mochaDocdash || {};
+            var docdash = env && env.conf && env.conf.docdash || {};
             var conf = env && env.conf || {};
 
             if (!hasOwnProp.call(item, 'longname')) {
@@ -405,7 +405,7 @@ function buildNav(members) {
     var nav = '<h2><a href="index.html">Home</a></h2>';
     var seen = {};
     var seenTutorials = {};
-    var docdash = env && env.conf && env.conf.mochaDocdash || {};
+    var docdash = env && env.conf && env.conf.docdash || {};
     if (docdash.menu) {
         for (var menu in docdash.menu) {
             nav += '<h2><a ';
@@ -459,7 +459,7 @@ function buildNav(members) {
     @param {Tutorial} tutorials
  */
 exports.publish = function(taffyData, opts, tutorials) {
-    var docdash = env && env.conf && env.conf.mochaDocdash || {};
+    var docdash = env && env.conf && env.conf.docdash || {};
     data = taffyData;
 
     var conf = env.conf.templates || {};

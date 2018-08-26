@@ -29,7 +29,7 @@
             "includeDate": false
         }
     },
-    "mocha-docdash": {
+    "docdash": {
         "static": true,
         "sort": true,
         "disqus": "",

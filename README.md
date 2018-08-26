@@ -70,7 +70,7 @@ Docdash supports the following options:
 
 ```
 {
-    "mocha-docdash": {
+    "docdash": {
         "static": [false|true],         // Display the static members inside the navbar
         "sort": [false|true],           // Sort the methods in the navbar
         "sectionOrder": [               // Order the main section in the navbar (default order shown here)
