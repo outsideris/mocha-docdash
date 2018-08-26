@@ -233,11 +233,13 @@ nav ul a:active {
     padding: 0;
     display: block;
     font-size: 12px;
+    transition: background-color 0.2s;
 }
 
 nav a:hover,
-nav a:active {
-    color: #663100;
+nav a:active,
+nav a.isActive {
+  background-color: rgba(102, 49, 0, 0.08);
 }
 
 nav>ul {
@@ -267,18 +269,22 @@ nav ul ul a:active {
 }
 
 nav h2 {
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: bold;
     margin: 0;
     padding: 0;
 }
 
-nav>h2>a {
+nav > h2 > a {
+    display: block;
+    margin-top: 10px;
+}
+
+nav>h2:first-of-type>a {
     background: url('../images/mocha-logo.svg') center center no-repeat;
     text-indent: -999px;
-    display: block;
     padding-top: 80%;
     line-height: 0;
-    margin-top: 10px;
 }
 
 footer {
