@@ -70,9 +70,51 @@ Docdash supports the following options:
 
 ```
 {
-    "docdash": {
-        "static": [false|true],  // Display the static members inside the navbar
-        "sort": [false|true]     // Sort the methods in the navbar
+    "mocha-docdash": {
+        "static": [false|true],         // Display the static members inside the navbar
+        "sort": [false|true],           // Sort the methods in the navbar
+        "sectionOrder": [               // Order the main section in the navbar (default order shown here)
+            "Classes",
+            "Modules",
+            "Externals",
+            "Events",
+            "Namespaces",
+            "Mixins",
+            "Tutorials",
+            "Interfaces"
+        ]
+        "disqus": "",                   // Shortname for your disqus (subdomain during site creation)
+        "openGraph": {                  // Open Graph options (mostly for Facebook and other sites to easily extract meta information)
+            "title": "",                // Title of the website
+            "type": "website",          // Type of the website
+            "image": "",                // Main image/logo
+            "site_name": "",            // Site name
+            "url": ""                   // Main canonical URL for the main page of the site
+        },
+        "meta": {                       // Meta information options (mostly for search engines that have not indexed your site yet)
+            "title": "",                // Also will be used as postfix to actualy page title, prefixed with object/document name
+            "description": "",          // Description of overal contents of your website
+            "keyword": ""               // Keywords for search engines
+        },
+        "search": [false|true],         // Display seach box above navigation which allows to search/filter navigation items
+        "collapse": [false|true],       // Collapse navigation by default except current object's navigation of the current page
+        "typedefs": [false|true],       // Include typedefs in menu
+        "removeQuotes": [none|all|trim],// Remove single and double quotes, trim removes only surrounding ones
+        "scripts": []                   // Array of external (or relative local copied using templates.default.staticFiles.include) scripts to inject into HTML,
+        "menu":{                        // Adding additional menu items after Home
+            "Project Website":{         // Menu item name
+                "href":"https://myproject.com", //the rest of HTML properties to add to manu item
+                "target":"_blank",
+                "class":"menu-item",
+                "id":"website_link"
+            },
+            "Forum":{
+                "href":"https://myproject.com.forum",
+                "target":"_blank",
+                "class":"menu-item",
+                "id":"forum_link"
+            }
+        }
     }
 }
 ```
