@@ -35,5 +35,10 @@
     "static",
     "tmpl"
   ],
+  "peerDependencies": {
+    "jsdoc": "*"
+  },
+  "dependencies": {
+    "taffydb": "^2.7.3"
   }
 }
