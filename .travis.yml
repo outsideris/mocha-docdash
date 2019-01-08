@@ -11,6 +11,9 @@ cache:
   directories:
   - ~/.npm
 install: npm ci
+
+# the generated test site will be deployed to S3:
+# https://s3-us-west-2.amazonaws.com/mochajs/mocha-docdash/index.html
 deploy:
   region: us-west-2
   provider: s3
