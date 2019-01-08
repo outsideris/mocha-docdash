@@ -2,7 +2,7 @@
 
 [![npm package](https://img.shields.io/npm/v/@mocha/docdash.svg)](https://www.npmjs.com/package/@mocha/docdash)
 
-A [JSDoc](https://usejsdoc.org) template for [Mocha's API documentation](https://mochajs.org/api), forked from [docdash](http://clenemt.github.io/docdash/)
+A [JSDoc](https://usejsdoc.org) template for [Mocha's API documentation](https://mochajs.org/api), forked from [docdash](http://clenemt.github.io/docdash/).
 
 ## Install
 
