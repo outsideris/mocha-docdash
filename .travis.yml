@@ -10,6 +10,7 @@ notifications:
 cache:
   directories:
   - ~/.npm
+install: npm ci
 deploy:
   region: us-west-2
   provider: s3
