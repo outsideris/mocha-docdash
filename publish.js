@@ -316,7 +316,7 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
 
     if (items && items.length) {
         var itemsNav = '';
-        var docdash = env && env.conf && env.conf.mochaDocdash || {};
+        var docdash = env && env.conf && (env.conf.mochaDocdash || env.conf.docdash || {});
         var level = typeof docdash.navLevel === 'number' && docdash.navLevel >= 0 ?
             docdash.navLevel :
             Infinity;
@@ -348,7 +348,7 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
                 }
                 itemsNav += linktoFn(item.longname, displayName.replace(/\b(module|event):/g, ''));
 
-                if (mochaDocdash.static && members.find(function (m) { return m.scope === 'static'; } )) {
+                if (docdash.static && members.find(function (m) { return m.scope === 'static'; } )) {
                     itemsNav += "<ul class='members'>";
 
                     members.forEach(function (member) {
@@ -474,7 +474,7 @@ function buildNav(members) {
     @param {Tutorial} tutorials
  */
 exports.publish = function(taffyData, opts, tutorials) {
-    var mochaDocdash = env && env.conf && env.conf.mochaDocdash || {};
+    var docdash = env && env.conf && (env.conf.mochaDocdash || env.conf.docdash || {});
     data = taffyData;
 
     var conf = env.conf.templates || {};
@@ -502,7 +502,7 @@ exports.publish = function(taffyData, opts, tutorials) {
 
     data = helper.prune(data);
 
-    mochaDocdash.sort !== false && data.sort('longname, version, since');
+    docdash.sort !== false && data.sort('longname, version, since');
     helper.addEventListeners(data);
 
     var sourceFiles = {};
