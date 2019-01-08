@@ -17,7 +17,11 @@
     "browser-sync": "latest",
     "watch-run": "latest"
   },
-  "author": "Peter Müller <munter@fumle.dk>",
+  "author": "Clement Moron <clement.moron@gmail.com>",
+  "contributors": [
+    "Peter Müller <munter@fumle.dk>",
+    "Christopher Hiller <boneskull@boneskull.com>"
+  ],
   "license": "Apache-2.0",
   "keywords": [
     "jsdoc",

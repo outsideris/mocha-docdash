@@ -1,7 +1,13 @@
 language: node_js
-node_js: 8
+node_js:
+- '8'
+- '10'
+sudo: false
+branches:
+  except:
+  - gh-pages
+notifications:
+  email: false
 cache:
   directories:
     - ~/.npm
-notifications:
-  email: false
