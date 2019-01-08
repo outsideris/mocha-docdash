@@ -1,32 +1,26 @@
 # @mocha/docdash
+
 [![npm package](https://img.shields.io/npm/v/@mocha/docdash.svg)](https://www.npmjs.com/package/@mocha/docdash)
 
-A jsdoc template for [Mocha](https://mochajs.org), forked from [docdash](http://clenemt.github.io/docdash/)
-
+A [JSDoc](https://usejsdoc.org) template for [Mocha's API documentation](https://mochajs.org/api), forked from [docdash](http://clenemt.github.io/docdash/)
 
 ## Install
 
 ```bash
-$ npm install @mocha/docdash
+$ npm install @mocha/docdash jsdoc -D
 ```
 
 ## Usage
-Clone repository to your designated `jsdoc` template directory, then:
 
-```bash
-$ jsdoc entry-file.js -t path/to/mocha-docdash
-```
-
-## Usage (npm)
-In your projects `package.json` file add a new script:
+In your project's `package.json` file, add a new script:
 
 ```json
 "script": {
-  "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json"
+  "generate-docs": "jsdoc -c jsdoc.json"
 }
 ```
 
-In your `jsdoc.json` file, add a template option.
+In your `jsdoc.json` file, add a template option:
 
 ```json
 "opts": {
@@ -35,39 +29,39 @@ In your `jsdoc.json` file, add a template option.
 ```
 
 ## Sample `jsdoc.json`
+
 See the config file for the [fixtures](fixtures/fixtures.conf.json) or the sample below.
 
 ```json
 {
-    "tags": {
-        "allowUnknownTags": false
-    },
-    "source": {
-        "include": "../js",
-        "includePattern": ".js$",
-        "excludePattern": "(node_modules/|docs)"
-    },
-    "plugins": [
-        "plugins/markdown"
-    ],
-    "opts": {
-        "template": "node_modules/@mocha/docdash",
-        "encoding": "utf8",
-        "destination": "docs/",
-        "recurse": true,
-        "verbose": true
-    },
-    "templates": {
-        "cleverLinks": false,
-        "monospaceLinks": false
-    }
+  "tags": {
+    "allowUnknownTags": false
+  },
+  "source": {
+    "include": "../js",
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "plugins": ["plugins/markdown"],
+  "opts": {
+    "template": "node_modules/@mocha/docdash",
+    "encoding": "utf8",
+    "destination": "docs/",
+    "recurse": true,
+    "verbose": true
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  }
 }
 ```
 
 ## Options
+
 Docdash supports the following options:
 
-```
+```plain
 {
     "docdash": {
         "static": [false|true],         // Display the static members inside the navbar
@@ -134,6 +128,6 @@ Place them anywhere inside your `jsdoc.json` file.
 [![6](https://sourcerer.io/fame/ar2rsawseen/clenemt/docdash/images/6)](https://sourcerer.io/fame/ar2rsawseen/clenemt/docdash/links/6)
 [![7](https://sourcerer.io/fame/ar2rsawseen/clenemt/docdash/images/7)](https://sourcerer.io/fame/ar2rsawseen/clenemt/docdash/links/7)
 
-
 ## License
+
 Licensed under the Apache License, version 2.0. (see [Apache-2.0](LICENSE.md)).

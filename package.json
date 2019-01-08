@@ -1,7 +1,7 @@
 {
   "name": "@mocha/docdash",
   "version": "1.0.1",
-  "description": "A jsdoc template for mochajs, forked from docdash",
+  "description": "A JSDoc template for Mocha, forked from docdash",
   "main": "publish.js",
   "scripts": {
     "test": "jsdoc -c fixtures/fixtures.conf.json",
