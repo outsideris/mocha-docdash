@@ -473,7 +473,7 @@ function buildNav(members) {
     @param {Tutorial} tutorials
  */
 exports.publish = function(taffyData, opts, tutorials) {
-    var docdash = env && env.conf && (env.conf.mochaDocdash || env.conf.docdash || {});
+    var docdash = env && env.conf && (env.conf.mochaDocdash || env.conf['mocha-docdash'] || env.conf.docdash || {});
     data = taffyData;
 
     var conf = env.conf.templates || {};

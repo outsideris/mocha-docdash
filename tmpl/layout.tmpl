@@ -23,6 +23,19 @@
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <?js if (env.conf.docdash.headScripts && env.conf.docdash.headScripts.length) {
+        for(var i = 0; i < env.conf.docdash.headScripts.length; i++){
+            if (env.conf.docdash.headScripts[i].indexOf(".css") != -1) {
+        ?>
+        <link type="text/css" rel="stylesheet" href="<?js= env.conf.docdash.headScripts[i] ?>">
+        <?js
+            } else {
+        ?>
+        <script src="<?js= env.conf.docdash.headScripts[i] ?>"></script>
+        <?js
+            }
+        }
+    } ?>
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link type="text/css" rel="stylesheet" href="styles/prettify.css">
     <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
