@@ -1,6 +1,6 @@
 {
   "name": "@mocha/docdash",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "A JSDoc template for Mocha, forked from docdash",
   "main": "publish.js",
   "scripts": {
