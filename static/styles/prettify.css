@@ -1,79 +1,82 @@
+/*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
+
 .pln {
-  color: #ddd;
+  color: #1b1918;
 }
 
 /* string content */
 .str {
-  color: #61ce3c;
+  color: #7b9726;
 }
 
 /* a keyword */
 .kwd {
-  color: #fbde2d;
+  color: #6666ea;
 }
 
 /* a comment */
 .com {
-  color: #aeaeae;
+  color: #9c9491;
 }
 
 /* a type name */
 .typ {
-  color: #8da6ce;
+  color: #407ee7;
 }
 
 /* a literal value */
 .lit {
-  color: #fbde2d;
+  color: #df5320;
 }
 
 /* punctuation */
 .pun {
-  color: #ddd;
+  color: #1b1918;
 }
 
 /* lisp open bracket */
 .opn {
-  color: #000000;
+  color: #1b1918;
 }
 
 /* lisp close bracket */
 .clo {
-  color: #000000;
+  color: #1b1918;
 }
 
 /* a markup tag name */
 .tag {
-  color: #8da6ce;
+  color: #f22c40;
 }
 
 /* a markup attribute name */
 .atn {
-  color: #fbde2d;
+  color: #df5320;
 }
 
 /* a markup attribute value */
 .atv {
-  color: #ddd;
+  color: #3d97b8;
 }
 
 /* a declaration */
 .dec {
-  color: #EF5050;
+  color: #df5320;
 }
 
 /* a variable name */
 .var {
-  color: #c82829;
+  color: #f22c40;
 }
 
 /* a function name */
 .fun {
-  color: #4271ae;
+  color: #407ee7;
 }
 
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
   margin-top: 0;
   margin-bottom: 0;
+  color: #9c9491;
 }

@@ -358,14 +358,14 @@ footer {
   width: inherit;
   line-height: 18px;
   display: block;
-  background-color: #0d152a;
+  background-color: #f1efee;
   color: #aeaeae;
 }
 
 .prettyprint code {
   line-height: 18px;
   display: block;
-  background-color: #0d152a;
+  background-color: #f1efee;
   color: #4D4E53;
 }
 
@@ -398,11 +398,11 @@ footer {
 }
 
 .prettyprint.linenums li {
-   border-left: 3px #34446B solid;
+   border-left: 3px #b59076 solid;
 }
 
 .prettyprint.linenums li.selected, .prettyprint.linenums li.selected * {
-   background-color: #34446B;
+   background-color: #b59076;
 }
 
 .prettyprint.linenums li * {
